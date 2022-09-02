@@ -2,9 +2,12 @@ import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 
+import logo from "../images/manabuLogo.png";
+
 const Navbar = () => {
   return (
     <Nav>
+      <Image src={logo} />
       <Title> Manabu </Title>
       <Links>
         <StyledLink to="/">Product</StyledLink>
@@ -22,7 +25,12 @@ const Nav = styled.nav`
   width: 100vw;
   min-height: 65px;
   background-color: white;
-  border-bottom: solid 1px #eaeaed;
+  border-bottom: solid 2px #eaeaed;
+`;
+
+const Image = styled.img`
+  height: 50px;
+  padding-left: 15px;
 `;
 
 const Title = styled.h1`
@@ -38,6 +46,10 @@ const StyledLink = styled(Link)`
 
   :visited {
     color: black;
+  }
+
+  :hover {
+    font-weight: 900;
   }
 `;
 
