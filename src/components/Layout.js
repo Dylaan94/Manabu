@@ -12,10 +12,10 @@ export default function Layout({ children }) {
   );
 }
 
-const Container = styled.body`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100%auto;
-  background-color: #6e68f0;
+  /* background-color: #6e68f0; */
 `;

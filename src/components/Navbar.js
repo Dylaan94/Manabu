@@ -2,7 +2,9 @@ import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 
+// image imports
 import logo from "../images/manabuLogo.png";
+
 
 const Navbar = () => {
   return (
@@ -19,6 +21,8 @@ const Navbar = () => {
 };
 
 const Nav = styled.nav`
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
