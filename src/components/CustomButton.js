@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
 
 export default function CustomButton({
   onClick,
@@ -9,22 +8,20 @@ export default function CustomButton({
   text,
   bgColor,
   textColor,
-  link,
+  bold,
 }) {
   return (
     <Button
+      onClick={onClick}
       style={{
         border: `solid 2px ${border ? border : "black"}`,
         backgroundColor: `${bgColor ? bgColor : "white"}`,
-        color: `${textColor ? textColor : "black"}`,
+        color: `${textColor ? textColor : "#212529"}`,
+        fontWeight: `${bold ? "900" : "500"}`,
       }}
+      role="link"
     >
-      <StyledLink
-        style={{ color: `${textColor ? textColor : "black"}`, fontWeight: 500 }}
-        to={link ? link : "/"}
-      >
-        {text}
-      </StyledLink>
+      {text}
     </Button>
   );
 }
@@ -35,11 +32,8 @@ const Button = styled.button`
   height: 50px;
   border-radius: 18px;
   margin: 5px;
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  :visited {
-    color: black;
+  font-size: 1em;
+  :hover {
+    cursor: pointer;
   }
 `;
