@@ -42,10 +42,14 @@ export default function GetInvolved() {
 const Root = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 50%;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
 
   h4 {
     margin: 0;
@@ -56,12 +60,17 @@ const Root = styled.div`
   p {
     width: 80%;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 `;
 
 const Title = styled.h2`
   font-size: 2em;
   align-self: center;
+  text-align: center;
 `;
 
 const SubText = styled.h3`

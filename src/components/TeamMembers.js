@@ -63,6 +63,11 @@ const TitleContainer = styled.div`
 const MainContainer = styled.div`
   display: flex;
   justify-content: space-around;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Title = styled.h2``;
@@ -73,6 +78,10 @@ const MemberSection = styled.section`
   align-items: center;
   text-align: center;
   width: 25%;
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 const Image = styled.img`

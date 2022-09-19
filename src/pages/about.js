@@ -6,19 +6,27 @@ import styled from "styled-components";
 import TeamMembers from "../components/TeamMembers";
 import GetInvolved from "../components/GetInvolved";
 
-
 export default function About() {
   return (
     <Layout>
-      <TeamSection>
-        <TeamMembers />
-      </TeamSection>
-      <GetInvolvedSection>
-        <GetInvolved />
-      </GetInvolvedSection>
+      <Root>
+        <TeamSection>
+          <TeamMembers />
+        </TeamSection>
+        <GetInvolvedSection>
+          <GetInvolved />
+        </GetInvolvedSection>
+      </Root>
     </Layout>
   );
 }
+
+const Root = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 80vw;
+`;
 
 const TeamSection = styled.section`
   display: flex;
