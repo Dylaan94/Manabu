@@ -4,14 +4,18 @@ import styled from "styled-components";
 
 // component imports
 import TeamMembers from "../components/TeamMembers";
+import GetInvolved from "../components/GetInvolved";
+
 
 export default function About() {
   return (
     <Layout>
-      <Title> Our Team</Title>
       <TeamSection>
         <TeamMembers />
       </TeamSection>
+      <GetInvolvedSection>
+        <GetInvolved />
+      </GetInvolvedSection>
     </Layout>
   );
 }
@@ -20,6 +24,7 @@ const TeamSection = styled.section`
   display: flex;
 `;
 
-const Title = styled.h2`
-  font-size: 24px;
+const GetInvolvedSection = styled.section`
+  display: flex;
+  justify-content: center;
 `;

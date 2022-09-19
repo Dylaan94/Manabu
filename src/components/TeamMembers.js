@@ -9,40 +9,63 @@ import Pablo from "../images/Pablo_Small.png";
 
 export default function TeamMembers() {
   return (
-    <Container>
-      <MemberSection>
-        <Image src={Pablo} />
-        <Name> Pablo Riveros</Name>
-        <Position>CEO, Founder</Position>
-        <Bio></Bio>
-      </MemberSection>
-      <MemberSection>
-        <Image src={Karina} />
-        <Name>Karina Viella Darminto</Name>
-        <Position>Digital Marketing Media Intern</Position>
-        <Bio>
-          Hi there! My name is Karina. I am a Sociology student and an aspiring
-          UX/UI designer currently in between
-        </Bio>
-      </MemberSection>
-      <MemberSection>
-        <Image src={Dylan} />
-        <Name> Dylan Brain</Name>
-        <Position>Web Development Intern</Position>
-        <Bio>
-          Hey! I'm originally from the UK and I have over 5 years of experience
-          working in Japan. I am currently studying for my Master's Degree in
-          Computer Science.
-        </Bio>
-      </MemberSection>
-    </Container>
+    <Root>
+      <TitleContainer>
+        <Title>Our Global Team</Title>
+      </TitleContainer>
+      <MainContainer>
+        <MemberSection>
+          <Image src={Pablo} />
+          <Name> Pablo Riveros</Name>
+          <Position>CEO, Founder</Position>
+          <Bio>
+            I have over 15 years of expertise in digital learning-edtech,
+            academia and in the corporate sector. I have completed
+            industry-academic research with Kyushu University (Japan) University
+            of Queensland (Australia) among others. I love to run and practice
+            zazen meditation
+          </Bio>
+        </MemberSection>
+        <MemberSection>
+          <Image src={Karina} />
+          <Name>Karina Viella Darminto</Name>
+          <Position>Digital Marketing Media Intern</Position>
+          <Bio>
+            Hi there! My name is Karina. I am a Sociology student and an
+            aspiring UX/UI designer currently in between
+          </Bio>
+        </MemberSection>
+        <MemberSection>
+          <Image src={Dylan} />
+          <Name> Dylan Brain</Name>
+          <Position>Web Development Intern</Position>
+          <Bio>
+            Hey! I'm originally from the UK and I have over 5 years of
+            experience working in Japan. I am currently studying for my Master's
+            Degree in Computer Science.
+          </Bio>
+        </MemberSection>
+      </MainContainer>
+    </Root>
   );
 }
 
-const Container = styled.div`
+const Root = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const TitleContainer = styled.div`
+  align-self: center;
+  font-size: 1.5em;
+`;
+
+const MainContainer = styled.div`
   display: flex;
   justify-content: space-around;
 `;
+
+const Title = styled.h2``;
 
 const MemberSection = styled.section`
   display: flex;
@@ -60,7 +83,7 @@ const Image = styled.img`
 `;
 
 const Name = styled.h3`
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
   font-weight: 900;
   font-size: 1.3em;

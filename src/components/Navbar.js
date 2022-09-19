@@ -13,7 +13,7 @@ const Navbar = () => {
       <Title> Manabu </Title>
       <Links>
         <StyledLink to="/">Product</StyledLink>
-        <StyledLink to="/about">About</StyledLink>
+        <StyledLink to="/about">About Us</StyledLink>
         <StyledLink to="/contact">Contact</StyledLink>
       </Links>
     </Nav>
