@@ -12,7 +12,7 @@ export default function Footer() {
         <Logo src={TsunagaruLogo}></Logo>
         <ul>
           <li id="title">Tsunagaru Edutech (Manabu)</li>
-          <li class="phone">+81 70 8419 6469</li>
+          <li>+81 70 8419 6469</li>
           <li>support@tsunagaru-edutech.com</li>
           <li>
             福岡県福岡市博多区博多駅中央街1-1 JR博多シティ アミュプラザ博多

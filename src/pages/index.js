@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import styled from "styled-components";
 import Typewriter from "typewriter-effect";
@@ -12,6 +13,21 @@ import tsunagaruLogo from "../images/tsunagaruLogoNoBG.svg";
 import CustomButton from "../components/CustomButton";
 
 const IndexPage = () => {
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log("scrolled");
+      setHasScrolled(true);
+    };
+
+    if (!hasScrolled) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [hasScrolled]);
+
   const onAboutClicked = () => {
     navigate("/about");
   };
@@ -141,6 +157,7 @@ const SubTitle = styled.h3`
       opacity: 1;
     }
   }
+
 `;
 
 const LogoDiv = styled.div`
