@@ -4,6 +4,9 @@ import styled from "styled-components";
 //component imports
 import CustomButton from "./CustomButton";
 
+//image imports
+import locationPin from "../images/locationPin.png";
+
 export default function GetInvolved() {
   const onButtonClicked = () => {
     console.log("button clicked");
@@ -16,11 +19,14 @@ export default function GetInvolved() {
     <Root>
       <Title> Want to get involved? </Title>
       <SubText>
-        We're always on the look out for new UI/UX Designer, Graphic Designer
-        and Developer Interns so get in touch!
+        We're always on the look out for new UI/UX Designers, Graphic Designers
+        and Development Interns so get in touch!
       </SubText>
       <Location>
-        <span style={{ fontWeight: "900", fontSize: "1.1em" }}>Location: </span>{" "}
+        <IconImage src={locationPin} />
+        <span style={{ fontWeight: "900", fontSize: "1.1em" }}>
+          Location:{" "}
+        </span>{" "}
         Japan (Remote)
       </Location>
       <h4>How to apply</h4>
@@ -68,7 +74,7 @@ const Root = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 2em;
+  font-size: 2.2em;
   align-self: center;
   text-align: center;
 `;
@@ -80,3 +86,7 @@ const SubText = styled.h3`
 `;
 
 const Location = styled.p``;
+
+const IconImage = styled.img`
+  height: 1.5em;
+`;

@@ -26,6 +26,20 @@ const Root = styled.div`
   flex-direction: column;
   align-self: center;
   width: 80vw;
+
+  animation: fadeIn 0.5s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 const TeamSection = styled.section`

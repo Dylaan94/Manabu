@@ -2,10 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 //image imports
-
 import Dylan from "../images/Dylan_Small.png";
 import Karina from "../images/Karina_Small.png";
 import Pablo from "../images/Pablo_Small.png";
+
+// flag image imports
+import canadaFlag from "../images/canadaFlag.png";
+import japanFlag from "../images/japanFlag.png";
+import indonesiaFlag from "../images/indonesiaFlag.png";
+import manTechnologist from "../images/manTechnologist.png";
+import manMeditating from "../images/manMeditating.png";
 
 export default function TeamMembers() {
   return (
@@ -15,6 +21,17 @@ export default function TeamMembers() {
       </TitleContainer>
       <MainContainer>
         <MemberSection>
+          <Image src={Karina} />
+          <Name>Karina Viella Darminto</Name>
+          <Position>Digital Marketing Media Intern</Position>
+          <Bio>
+            Hi there! My name is Karina. I am a Sociology student and an
+            aspiring UX/UI designer currently in between{" "}
+            <IconImage src={indonesiaFlag} /> <IconImage src={japanFlag} />{" "}
+            <IconImage src={canadaFlag} />
+          </Bio>
+        </MemberSection>
+        <MemberSection>
           <Image src={Pablo} />
           <Name> Pablo Riveros</Name>
           <Position>CEO, Founder</Position>
@@ -23,18 +40,10 @@ export default function TeamMembers() {
             academia and in the corporate sector. I have completed
             industry-academic research with Kyushu University (Japan) University
             of Queensland (Australia) among others. I love to run and practice
-            zazen meditation
+            zazen meditation <IconImage src={manMeditating} />
           </Bio>
         </MemberSection>
-        <MemberSection>
-          <Image src={Karina} />
-          <Name>Karina Viella Darminto</Name>
-          <Position>Digital Marketing Media Intern</Position>
-          <Bio>
-            Hi there! My name is Karina. I am a Sociology student and an
-            aspiring UX/UI designer currently in between
-          </Bio>
-        </MemberSection>
+
         <MemberSection>
           <Image src={Dylan} />
           <Name> Dylan Brain</Name>
@@ -42,7 +51,7 @@ export default function TeamMembers() {
           <Bio>
             Hey! I'm originally from the UK and I have over 5 years of
             experience working in Japan. I am currently studying for my Master's
-            Degree in Computer Science.
+            Degree in Computer Science <IconImage src={manTechnologist} />
           </Bio>
         </MemberSection>
       </MainContainer>
@@ -107,3 +116,7 @@ const Position = styled.p`
 `;
 
 const Bio = styled.p``;
+
+const IconImage = styled.img`
+  height: 1.4em;
+`;
