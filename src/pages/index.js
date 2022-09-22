@@ -43,7 +43,7 @@ const IndexPage = () => {
               href="https://tsunagaru-edutech.com"
               style={{ textDecoration: "none" }}
             >
-              <SubTitle>Tsunagaru Edutech</SubTitle>
+              <SubTitle>繋がる</SubTitle>
             </a>
           </LogoDiv>
           <Title>

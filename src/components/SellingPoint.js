@@ -19,16 +19,28 @@ export default function SellingPoint() {
           powerful learning analytics and AI to predict learning best practices
           and save business operational costs!
         </p>
+        <p>
+          {" "}
+          Tsunagaru Edutech is ISIT accredited and we recently became a member
+          and graduated Amazon's AWS Edstart accelerator program. We are
+          recognised as one of the most innovative Edtech startups in the Asia
+          Pacific (by AWS).
+        </p>
       </SectionContainer>
       <SectionContainer>
         <SectionTitle>
           <Image src={woman} /> Social
         </SectionTitle>
         <p>
-          Optional team leaderboards and point systems keep you in competition
-          with your colleagues, or can be used to showcase your progress as a
-          company. Manabu can also be used to connect with your local community
-          and learn together through Live Streaming integration.
+          Manabu supports the corperate sector in delivering advanced remote
+          training utilising the metaverse, and up-skilling workforces following
+          a collective and social collaborative approach.
+        </p>
+        <p>
+          Optional team leaderboards and point systems keeps you up to date with
+          your colleagues progress, and can be used to showcase your progress as
+          a company. Manabu can also be used to connect with your local
+          community and learn together through Live Streaming integration.
         </p>
       </SectionContainer>
       <SectionContainer>
@@ -36,8 +48,14 @@ export default function SellingPoint() {
           <Image src={herb} /> Sustainable
         </SectionTitle>
         <p>
-          Manabu is both ESG and SDG aligned, meaning it can help you track and
-          meet your sustainability commitments.
+          Manabu is both SDG (Social Development Goals) and ESG (Environmental,
+          Social, and Governance principles) aligned, meaning it can help you
+          track and meet your sustainability commitments.
+        </p>
+        <p>
+          Manabu rewards employees for engaging with sustainability and any
+          impact they make in the community. Companies can save millions of
+          operational costs using Manabu by obtaining key successs metrics.
         </p>
       </SectionContainer>
     </MainContainer>

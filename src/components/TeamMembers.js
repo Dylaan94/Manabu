@@ -20,7 +20,7 @@ export default function TeamMembers() {
         <Title>Our Global Team</Title>
       </TitleContainer>
       <MainContainer>
-        <MemberSection>
+        <MemberSection id="karina-section">
           <Image src={Karina} />
           <Name>Karina Viella Darminto</Name>
           <Position>Digital Marketing Media Intern</Position>
@@ -31,7 +31,7 @@ export default function TeamMembers() {
             <IconImage src={canadaFlag} />
           </Bio>
         </MemberSection>
-        <MemberSection>
+        <MemberSection id="pablo-section">
           <Image src={Pablo} />
           <Name> Pablo Riveros</Name>
           <Position>CEO, Founder</Position>
@@ -44,7 +44,7 @@ export default function TeamMembers() {
           </Bio>
         </MemberSection>
 
-        <MemberSection>
+        <MemberSection id="dylan-section">
           <Image src={Dylan} />
           <Name> Dylan Brain</Name>
           <Position>Web Development Intern</Position>
@@ -76,6 +76,19 @@ const MainContainer = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+
+    // maintains order when page resizes
+    #pablo-section {
+      order: 0;
+    }
+
+    #karina-section {
+      order: 1;
+    }
+
+    #dylan-section {
+      order: 2;
+    }
   }
 `;
 
