@@ -77,6 +77,14 @@ const MainContainer = styled.div`
   display: flex;
   justify-content: space-around;
 
+  #karina-section {
+    margin-top: 2vh;
+  }
+
+  #dylan-section {
+    margin-top: 2vh;
+  }
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -88,10 +96,12 @@ const MainContainer = styled.div`
 
     #karina-section {
       order: 1;
+      margin-top: 0;
     }
 
     #dylan-section {
       order: 2;
+      margin-top: 0;
     }
   }
 `;
