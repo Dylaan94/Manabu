@@ -7,11 +7,11 @@ import Karina from "../images/Karina_Small.png";
 import Pablo from "../images/Pablo_Small.png";
 
 // flag image imports
-import canadaFlag from "../images/canadaFlag.png";
-import japanFlag from "../images/japanFlag.png";
-import indonesiaFlag from "../images/indonesiaFlag.png";
-import manTechnologist from "../images/manTechnologist.png";
-import manMeditating from "../images/manMeditating.png";
+import canadaFlag from "../images/canadaFlag.svg";
+import japanFlag from "../images/japanFlag.svg";
+import indonesiaFlag from "../images/indonesiaFlag.svg";
+import computer from "../images/computer.svg";
+import manMeditating from "../images/manMeditating.svg";
 
 export default function TeamMembers() {
   return (
@@ -26,9 +26,13 @@ export default function TeamMembers() {
           <Position>Digital Marketing Media Intern</Position>
           <Bio>
             Hi there! My name is Karina. I am a Sociology student and an
-            aspiring UX/UI designer currently in between{" "}
-            <IconImage src={indonesiaFlag} /> <IconImage src={japanFlag} />{" "}
-            <IconImage src={canadaFlag} />
+            aspiring UX/UI designer currently in between Japan, Indonesia, and
+            Canada!
+            <MultipleIcons>
+              <IconImage src={indonesiaFlag} />
+              <IconImage src={japanFlag} />
+              <IconImage src={canadaFlag} />
+            </MultipleIcons>
           </Bio>
         </MemberSection>
         <MemberSection id="pablo-section">
@@ -51,7 +55,7 @@ export default function TeamMembers() {
           <Bio>
             Hey! I'm originally from the UK and I have over 5 years of
             experience working in Japan. I am currently studying for my Master's
-            Degree in Computer Science <IconImage src={manTechnologist} />
+            Degree in Computer Science <IconImage src={computer} />
           </Bio>
         </MemberSection>
       </MainContainer>
@@ -128,8 +132,16 @@ const Position = styled.p`
   font-size: 1.1em;
 `;
 
-const Bio = styled.p``;
+const Bio = styled.p`
+  display: flex;
+  flex-direction: column;
+`;
+
+const MultipleIcons = styled.div`
+  align-self: center;
+`;
 
 const IconImage = styled.img`
-  height: 1.4em;
+  height: 1.6em;
+  align-self: center;
 `;

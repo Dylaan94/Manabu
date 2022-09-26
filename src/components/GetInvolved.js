@@ -5,7 +5,7 @@ import styled from "styled-components";
 import CustomButton from "./CustomButton";
 
 //image imports
-import locationPin from "../images/locationPin.png";
+import locationPin from "../images/locationPin.svg";
 
 export default function GetInvolved() {
   const onButtonClicked = () => {
@@ -24,7 +24,9 @@ export default function GetInvolved() {
       </SubText>
       <Location>
         <IconImage src={locationPin} />
-        <span style={{ fontWeight: "900", fontSize: "1.1em" }}>
+        <span
+          style={{ fontWeight: "900", fontSize: "1.1em", marginRight: "5px" }}
+        >
           Location:{" "}
         </span>{" "}
         Japan (Remote)
@@ -85,7 +87,11 @@ const SubText = styled.h3`
   text-align: center;
 `;
 
-const Location = styled.p``;
+const Location = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const IconImage = styled.img`
   height: 1.5em;

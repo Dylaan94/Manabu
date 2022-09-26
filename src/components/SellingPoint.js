@@ -2,16 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 // image imports
-import thumbsup from "../images/thumbsup.png";
-import woman from "../images/womanTechnologist.png";
-import herb from "../images/herb.png";
+import smilingface from "../images/smilingface.svg";
+import chats from "../images/chats.svg";
+import herb from "../images/herb.svg";
 
 export default function SellingPoint() {
   return (
     <MainContainer>
       <SectionContainer>
         <SectionTitle>
-          <Image src={thumbsup} /> Simple
+          <Image src={smilingface} /> Simple
         </SectionTitle>
         <p>
           Lightweight, easy to use navigation with no unnecessary features.
@@ -29,7 +29,7 @@ export default function SellingPoint() {
       </SectionContainer>
       <SectionContainer>
         <SectionTitle>
-          <Image src={woman} /> Social
+          <Image src={chats} /> Social
         </SectionTitle>
         <p>
           Manabu supports the corperate sector in delivering advanced remote
@@ -117,14 +117,17 @@ const SectionContainer = styled.div`
 `;
 
 const SectionTitle = styled.h3`
+  display: flex;
+  flex-direction: column;
   font-size: 24px;
   font-weight: 900;
   text-align: center;
   color: #212529;
   padding: 2vh;
+  padding-bottom: 0;
   margin: 0;
 `;
 
 const Image = styled.img`
-  height: 30px;
+  height: 40px;
 `;

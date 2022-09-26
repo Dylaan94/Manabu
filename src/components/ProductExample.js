@@ -13,10 +13,23 @@ export default function ProductExample() {
 }
 
 const MainContainer = styled.div`
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
   margin-top: 5vh;
   margin-bottom: 5vh;
+  
+  animation: fadeIn 2s;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 const Image = styled.img`

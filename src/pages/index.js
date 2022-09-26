@@ -216,6 +216,19 @@ const OverviewContainer = styled.div`
   margin-bottom: 3vh;
   margin-top: 3vh;
   width: 50%;
+  animation: fadeIn 2s;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   p {
     text-align: center;
     color: #212529;
