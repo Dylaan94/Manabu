@@ -46,7 +46,6 @@ export default function Footer() {
           border="#ff006e"
           bgColor="#ff006e"
           textColor="white"
-
         />
       </KeepInTouch>
     </StyledFooter>
@@ -104,7 +103,7 @@ const KeepInTouch = styled.div`
   width: 35%;
   color: white;
 
-  h3{
+  h3 {
     font-size: 22px;
     font-weight: 900;
   }
@@ -118,6 +117,7 @@ const Logo = styled.img`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  color: white;
   :visited {
     color: white;
   }

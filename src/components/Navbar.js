@@ -5,7 +5,6 @@ import styled from "styled-components";
 // image imports
 import logo from "../images/manabuLogo.png";
 
-
 const Navbar = () => {
   return (
     <Nav>
@@ -47,6 +46,7 @@ const Links = styled.div``;
 const StyledLink = styled(Link)`
   padding: 15px;
   text-decoration: none;
+  color: black;
 
   :visited {
     color: black;
