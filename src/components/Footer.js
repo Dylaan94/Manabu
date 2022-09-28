@@ -23,7 +23,7 @@ export default function Footer() {
       </Contact>
       <QuickLinks>
         <ul>
-          <li id="quickLinks"> Quick Links</li>
+          <h3 id="quickLinks"> Quick Links</h3>
           <li>
             <StyledLink to="/">Product</StyledLink>
           </li>
@@ -35,7 +35,7 @@ export default function Footer() {
           </li>
         </ul>
       </QuickLinks>
-      <KeepInTouch>
+      <KeepInTouch className="keep-in-touch">
         <h3>Keep in Touch</h3>
         <p>
           Follow our newsletter to keep up to date with Manabu and Tsuangaru
@@ -56,8 +56,20 @@ const StyledFooter = styled.footer`
   width: 100%;
   background-color: #6e68f0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 480px) {
+    .keep-in-touch {
+      display: none;
+    }
+  }
 `;
 
 const Contact = styled.div`
@@ -79,10 +91,13 @@ const Contact = styled.div`
     font-weight: 900;
     margin-bottom: 10px;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 const QuickLinks = styled.div`
-  margin: 3vh 0vh;
   width: 25%;
   color: white;
 
@@ -96,6 +111,10 @@ const QuickLinks = styled.div`
       font-size: 22px;
       margin-bottom: 10px;
     }
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 80%;
   }
 `;
 
