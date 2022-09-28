@@ -13,7 +13,6 @@ import CustomButton from "../components/CustomButton";
 // image imports
 import tsunagaruLogo from "../images/tsunagaruLogo.png";
 
-
 const IndexPage = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
 
@@ -43,8 +42,7 @@ const IndexPage = () => {
             <a
               href="https://tsunagaru-edutech.com"
               style={{ textDecoration: "none" }}
-            >
-            </a>
+            ></a>
           </LogoDiv>
           <Title>
             <Typewriter
@@ -102,32 +100,52 @@ const MainContainer = styled.div`
   flex-direction: column;
 `;
 
+const Container = styled.div`
+  margin-top: 10vh;
+  width: 50%;
+  text-align: center;
+
+  p {
+    margin-top: 2vh;
+    font-size: 1em;
+    animation: fadeIn 4s;
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  a {
+    font-weight: 900;
+    font-size: 18px;
+    color: black;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+  }
+`;
+
 const Title = styled.h2`
-  font-size: 5.3rem;
+  font-size: 5.3em;
   font-weight: 900;
   margin-top: 0;
   margin-bottom: 0;
-`;
 
-const SubTitle = styled.h3`
-  font-size: 20px;
-  font-weight: 500;
-  color: #6c757d;
-
-  animation: fadeIn 4s;
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  @media screen and (max-width: 400px) {
+    font-size: 4em;
   }
+
 `;
+
 
 const LogoDiv = styled.div`
   display: flex;
@@ -153,37 +171,6 @@ const Logo = styled.img`
     100% {
       opacity: 1;
     }
-  }
-`;
-
-const Container = styled.div`
-  margin-top: 10vh;
-  width: 50%;
-  max-width: 80%;
-  text-align: center;
-
-  p {
-    margin-top: 2vh;
-    font-size: 1em;
-    animation: fadeIn 4s;
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-  }
-
-  a {
-    font-weight: 900;
-    font-size: 18px;
-    color: black;
   }
 `;
 
