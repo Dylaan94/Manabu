@@ -31,7 +31,7 @@ export default function Footer() {
             <StyledLink to="/about">About</StyledLink>
           </li>
           <li>
-            <StyledLink to="/Contact">Contact</StyledLink>
+            <StyledLink to="/contact">Contact</StyledLink>
           </li>
         </ul>
       </QuickLinks>

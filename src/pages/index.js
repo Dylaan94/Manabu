@@ -8,10 +8,11 @@ import { navigate } from "gatsby";
 // Component imports
 import SellingPoint from "../components/SellingPoint";
 import ProductExample from "../components/ProductExample";
+import CustomButton from "../components/CustomButton";
 
 // image imports
-import tsunagaruLogo from "../images/tsunagaruLogoNoBG.svg";
-import CustomButton from "../components/CustomButton";
+import tsunagaruLogo from "../images/tsunagaruLogo.png";
+
 
 const IndexPage = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -43,7 +44,6 @@ const IndexPage = () => {
               href="https://tsunagaru-edutech.com"
               style={{ textDecoration: "none" }}
             >
-              <SubTitle>繋がる</SubTitle>
             </a>
           </LogoDiv>
           <Title>
@@ -137,7 +137,7 @@ const LogoDiv = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 30px;
+  height: 80px;
   text-shadow: 0 0 10px black;
   margin-right: 10px;
 
