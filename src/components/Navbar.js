@@ -29,6 +29,10 @@ const Nav = styled.nav`
   min-height: 65px;
   background-color: white;
   border-bottom: solid 2px #eaeaed;
+
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+  }
 `;
 
 const Image = styled.img`
@@ -39,6 +43,10 @@ const Image = styled.img`
 const Title = styled.h1`
   padding: 0px 15px;
   font-size: 24px;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const Links = styled.div``;
@@ -54,6 +62,10 @@ const StyledLink = styled(Link)`
 
   :hover {
     font-weight: 900;
+  }
+
+  @media screen and (max-width: 360px) {
+    padding: 5px;
   }
 `;
 
