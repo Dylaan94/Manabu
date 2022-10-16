@@ -9,4 +9,4 @@ Product Site built in Gatsby during my internship with Tsunagaru Japan
 - Fully responsive
 
 # Demo
-Find the demo site here: 
+Find the demo site here: https://dylaan94.github.io/manabu/
