@@ -1,3 +1,6 @@
+// add google analytics
+
+
 import * as React from "react";
 import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
@@ -156,6 +159,7 @@ const LogoDiv = styled.div`
 
 const Logo = styled.img`
   height: 80px;
+  width: auto;
   text-shadow: 0 0 10px black;
   margin-right: 10px;
 

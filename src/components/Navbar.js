@@ -37,6 +37,7 @@ const Nav = styled.nav`
 
 const Image = styled.img`
   height: 50px;
+  width: auto;
   padding-left: 15px;
 `;
 
